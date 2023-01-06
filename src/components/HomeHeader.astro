@@ -1,0 +1,26 @@
+---
+---
+<header id="home-header">
+    <div>
+        <h1 class="text-2xl font-bold">Hello, I'm Gio</h1>
+        <h2 class="text-xl font-semibold my-4">I like to <span class="typed"></span></h2>
+    </div>
+    <script>
+        import Typed from "typed.js";
+
+        const options = {
+            strings: [
+                "develop web apps",
+                "build keyboards",
+                "learn new languages",
+                "explore new technologies",
+            ],
+            typeSpeed: 30,
+            backSpeed: 25,
+            backDelay: 2500,
+            loop: true,
+        };
+
+        const typed = new Typed(".typed", options);
+    </script>
+</header>

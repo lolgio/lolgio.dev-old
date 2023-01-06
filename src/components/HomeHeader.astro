@@ -1,10 +1,47 @@
 ---
+const technologies = [
+    "Typescript",
+    "React",
+    "Astro",
+    "tRPC & zod",
+    "Tailwind",
+    "Prisma",
+];
 ---
 <header id="home-header">
-    <div>
-        <h1 class="text-2xl font-bold">Hello, I'm Gio</h1>
-        <h2 class="text-xl font-semibold my-4">I like to <span class="typed"></span></h2>
+    <div class="header">
+        <h1>Hello, I'm Gio.</h1>
+        <h2 class="my-4 no-underline">I like to <span class="typed"></span></h2>
     </div>
+    <section class="content">
+        <p>
+            I am a software developer from New Zealand with a passion for learning new things. 
+            I am currently studying a Bachelor of Computer Science at the University of Auckland.
+            Most of my projects are web apps, but I would like to expand to native apps in the future.
+        </p>
+        <br>
+    </section>
+    <section class="section">
+        <h2>Techonolgies I like.</h2>
+        <ul>
+            {technologies.map((tech) => <li>{tech}</li>)}
+        </ul>
+        <br>
+    </section>
+    <section class="section">
+        <h2 class="">Stuff I'm working on.</h2>
+        <ul>
+            <li>
+                <h3>Untitled granblue bot</h3>
+                <p>
+                    A discord bot and tRPC api for granblue fantasy.
+                    <br>
+                    The game hides a lot of data from players for no reason, so this bot can scrape it for you instead.
+                    This will eventually be open source and hosted for free use.
+                </p>
+            </li>
+        </ul>
+    </section>
     <script>
         import Typed from "typed.js";
 
@@ -21,6 +58,6 @@
             loop: true,
         };
 
-        const typed = new Typed(".typed", options);
+        new Typed(".typed", options);
     </script>
 </header>

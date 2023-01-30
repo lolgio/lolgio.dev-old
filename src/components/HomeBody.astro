@@ -1,0 +1,33 @@
+---
+const technologies = ["Typescript", "React", "Astro", "tRPC", "zod", "Tailwind", "Prisma"];
+---
+<section class="content">
+        <p>
+            I am a software developer from Auckland, New Zealand. 
+            I am currently studying Computer Science at the University of Auckland. 
+            I make web stuff.
+        </p>
+        <br />
+    </section>
+    <section class="section">
+        <h2>Techonolgies I like.</h2>
+        <ul>
+            {technologies.map((tech) => <li>{tech}</li>)}
+        </ul>
+        <br />
+    </section>
+    <section class="section">
+        <h2 class="">Stuff I'm working on.</h2>
+        <ul>
+            <li>
+                <h3>Kinpatsu</h3>
+                <p>
+                    A discord bot and tRPC api for Granblue Fantasy.
+                    <br />
+                    Provides ingame integration for fetching Guild War data,
+                    events, players, etc.
+                    Will eventually be public.
+                </p>
+            </li>
+        </ul>
+</section>

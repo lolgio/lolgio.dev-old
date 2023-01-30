@@ -1,9 +1,10 @@
 ---
+import ThemeToggle from "./ThemeToggle";
 ---
-<nav id="navbar" class="flex flex-wrap mt-2 gap-16">
+
+<nav id="navbar" class="flex flex-wrap mt-4 gap-16">
     <a href="/">Home</a>
     <a href="/projects">Projects</a>
-    <a href="/socials">Socials</a>
-    <a href="/contact">Contact</a>
+    <ThemeToggle client:load />
 </nav>
-<hr class="my-5">
+<hr class="my-5" />

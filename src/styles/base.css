@@ -12,7 +12,7 @@
         );
     }
     body {
-        @apply bg-slate-800 text-gray-100 body-bg;
+        @apply bg-gray-100 text-gray-900 body-bg dark:bg-gray-800 dark:text-gray-100;
     }
     h1 {
         @apply text-2xl font-bold underline underline-offset-8 decoration-[12px] mb-4;
@@ -24,7 +24,10 @@
         @apply font-semibold;
     }
     hr {
-        @apply border-2;
+        @apply border-2 border-gray-900 dark:border-gray-100;
+    }
+    p {
+        @apply text-justify;
     }
 }
 

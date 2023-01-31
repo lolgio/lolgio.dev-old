@@ -1,0 +1,21 @@
+---
+import ProjectItem from "./ProjectItem.astro";
+import type { Project } from "../types";
+
+const projects: Project[] = [
+    {
+        name: "Terramagotchi",
+        description: "An interactive art display made for my University Capstone Project. Uses p5.js as a rendering engine and Firebase for remote user interaction.",
+        image: "/terramagotchi.png",
+        link: "https://terramagotchi.web.app/",
+        github: "https://github.com/generatively/terramagotchi",
+        tags: ["p5.js", "Firebase", "Tailwind"],
+    },
+]
+---
+<section class="content">
+    {projects.map((project) => 
+        <ProjectItem project={project} />
+        <hr />
+    )}
+</section>
